@@ -22,7 +22,7 @@ public class Entry {
 	private Long entryid;
 	
 	@Column(name="entrydate", nullable=false)
-	private Date entrydate;
+	private String entrydate;
 	
 	@NotBlank
 	@Column(name="entryname", nullable=false)
@@ -35,7 +35,7 @@ public class Entry {
 	
 	public Entry() {}
 
-	public Entry(Date entrydate, String entryname, String entrytext) {
+	public Entry(String entrydate, String entryname, String entrytext) {
 		super();
 		this.entrydate = entrydate;
 		this.entryname = entryname;
@@ -50,11 +50,11 @@ public class Entry {
 		this.entryid = entryid;
 	}
 
-	public Date getEntrydate() {
+	public String getEntrydate() {
 		return entrydate;
 	}
 
-	public void setEntrydate(Date entrydate) {
+	public void setEntrydate(String entrydate) {
 		this.entrydate = entrydate;
 	}
 	
