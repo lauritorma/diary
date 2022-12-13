@@ -6,5 +6,5 @@ import org.springframework.data.repository.CrudRepository;
 
 public interface EntryRepository extends CrudRepository<Entry, Long> {
 
-	List<Entry> findByEntryName(String entryname);
+	List<Entry> findByEntryname(String entryname);
 }
